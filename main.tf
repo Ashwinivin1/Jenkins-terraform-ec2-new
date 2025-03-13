@@ -12,11 +12,7 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-
-
-output "bucket_name" {
-  value = aws_s3_bucket.my_bucket.id
-}
+ 
 
 resource "aws_instance" "app_server" {
   ami           = "ami-09e143e99e8fa74f9"
